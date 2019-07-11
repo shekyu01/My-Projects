@@ -1,0 +1,16 @@
+01-July-2019
+In *SROM -> regression* directory we have *“extreme_value_regressor.py”*. This file contain *“class ExtremeValueRegressor”* with fit method having (X,y) parameters. But the y parameter is not used in the fit method, also we don’t have the default value for y. Should I set the default value for y as *none*?
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+08-July-2019
+Issur type: Identified and resolved TypeError in predictive_uncertainity_estimator
+Raised pull request for Dhaval
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+10-July-2019
+Issue type: Identified issue in test suite. I was not creating index.html file after running test suite
+@stus @bhanu.vinzamuri
+There is merge conflict in the hyperband_model_selection which got checked in git. https://github.ibm.com/srom/srom/blob/ec5895c6a40043cc39e3eed90bbbca6fd6c1f84b/srom/pipeline/execution_types/hyperband_model_selection.py#L125
+Due to this there indentation error and test suite is failing.
+Could you please help us  in resolving this ?
+
