@@ -14,3 +14,15 @@ There is merge conflict in the hyperband_model_selection which got checked in gi
 Due to this there indentation error and test suite is failing.
 Could you please help us  in resolving this ?
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Cases worked
+1. classification ===> optimized decision tree ===> 67%
+2. regression ===> extreme_value_regressor ===> 100%
+				   extreme_value_quantile_regressor ===> 100%
+				   multivariate_adaptive_regression ===> 93%
+				   predictive_uncertainity_estimation ===> 95%
+				   
+3. auto ===> auto_classification ===> 83%
+			 auto_imbalanced_classification ===> 97%
+			 
+4. failure_prediction ===> auto_preprocessing ===> 96%
