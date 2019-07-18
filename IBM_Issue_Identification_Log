@@ -13,16 +13,20 @@ Issue type: Identified issue in test suite. I was not creating index.html file a
 There is merge conflict in the hyperband_model_selection which got checked in git. https://github.ibm.com/srom/srom/blob/ec5895c6a40043cc39e3eed90bbbca6fd6c1f84b/srom/pipeline/execution_types/hyperband_model_selection.py#L125
 Due to this there indentation error and test suite is failing.
 Could you please help us  in resolving this ?
-
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-Test Cases worked
+
+17-July-2019
+https://github.ibm.com/srom/srom/issues/275
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Cases Work
 1. classification ===> optimized decision tree ===> 67%
 2. regression ===> extreme_value_regressor ===> 100%
 				   extreme_value_quantile_regressor ===> 100%
 				   multivariate_adaptive_regression ===> 93%
 				   predictive_uncertainity_estimation ===> 95%
 				   
-3. auto ===> auto_classification ===> 83%
+3. auto ===> auto_classification ===> 99%
 			 auto_imbalanced_classification ===> 97%
 			 
-4. failure_prediction ===> auto_preprocessing ===> 96%
+4. failure_prediction ===> auto_preprocessing ===> 96% (***)
+						   time_sample ===> 100%
