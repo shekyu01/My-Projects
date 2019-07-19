@@ -30,3 +30,12 @@ Test Cases Work
 			 
 4. failure_prediction ===> auto_preprocessing ===> 96% (***)
 						   time_sample ===> 100%
+						   data_preparation ===> 93%
+						   evaluation ===> more of graph plotting
+						   transformations ===> parameter definations are not clear
+						   
+5. data_sampling	===> 
+
+6. data_validation ===>
+
+7. deep_learning ===>
