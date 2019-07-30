@@ -18,6 +18,33 @@ Could you please help us  in resolving this ?
 17-July-2019
 https://github.ibm.com/srom/srom/issues/275
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+30-July-2019
+Issue type: Identified issue while writing test case for auto_regression.py 
+ERROR: test_predict (__main__.TestAutoRegression)
+Test predict method
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_auto_regression.py", line 99, in test_predict -    ar.automate(X, y)
+
+  File "/srom/srom/auto/auto_regression.py", line 319, in automate -    return super(AutoRegression, self).automate(X, y)
+
+  File "/srom/srom/auto/base_auto.py", line 441, in automate -    self._init_pipeline(modified_states) modified_states= [[]]
+
+  File "/srom/srom/auto/base_auto.py", line 128, in _init_pipeline -    self.auto_pipeline.set_stages(stages)	
+
+  File "/srom/srom/pipeline/srom_pipeline.py", line 217, in set_stages -    self._sromgraph.set_stages(stages)
+
+  File "/srom/srom/pipeline/graph.py", line 112, in set_stages -    pipeline_utils.check_srom_pipeline_stages(stages)
+
+  File "/srom/srom/utils/pipeline_utils.py", line 39, in check_srom_pipeline_stages
+    raise Exception(error_msg)
+Exception: Stages should be a list of lists or list of lists of tuples and it should be non-empty. 
+
+Here imp_nodes in base_auto.py @line 388 is creating empty dictionary. The issue was in "self.auto_pipeline.pipeline_graph_result_analysis" where best_score is coming as "nan"
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 Test Cases Work
 1. classification ===> optimized decision tree ===> 67%
 2. regression ===> extreme_value_regressor ===> 100%
