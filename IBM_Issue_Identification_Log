@@ -54,6 +54,7 @@ Test Cases Work
 				   
 3. auto ===> auto_classification ===> 99%
 			 auto_imbalanced_classification ===> 97%
+			 auto_regression ===> 94%
 			 
 4. failure_prediction ===> auto_preprocessing ===> 96% (***)
 						   time_sample ===> 100%
@@ -63,6 +64,6 @@ Test Cases Work
 						   
 5. data_sampling	===> 
 
-6. data_validation ===>
+6. data_validation ===> auto_dive ===> 100%
 
 7. deep_learning ===>
