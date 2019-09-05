@@ -46,7 +46,7 @@ Here imp_nodes in base_auto.py @line 388 is creating empty dictionary. The issue
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 Test Cases Work
-1. classification ===> optimized decision tree ===> 67%
+1. classification ===> optimized decision tree ===> 67% (scorecard.py is pending)
 2. regression ===> extreme_value_regressor ===> 100%
 				   extreme_value_quantile_regressor ===> 100%
 				   multivariate_adaptive_regression ===> 93%
